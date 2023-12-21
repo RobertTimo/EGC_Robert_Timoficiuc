@@ -1,0 +1,28 @@
+	Intrebari si raspunsuri
+
+1. Ce este un viewport?
+	Un viewport în OpenGL este o zonă rectangulară pe fereastra de afișare, unde elementele grafice sunt desenate. Elementele în afara acestui viewport nu sunt vizibile, iar poziția și dimensiunile pot fi specificate prin coordonate (x, y) și lățimea și înălțimea acestuia.
+2. Ce reprezintă conceptul de frames per second (FPS) din
+punctul de vedere al bibliotecii OpenGL?
+	FPS în OpenGL se referă la numărul de cadre afișate pe ecran în fiecare secundă. Cu cât acest număr este mai mare, cu atât aplicația pare mai fluidă. În OpenGL, măsurarea FPS-ului ajută la evaluarea performanței aplicațiilor grafice.
+
+3. Când este rulată metoda OnUpdateFrame()?
+	Momentul rulării metodei OnUpdateFrame() în aplicația OpenGL depinde de implementare. În general, aceasta actualizează starea jocului sau a aplicației, cum ar fi mișcarea obiectelor, și este apelată în bucla principală de randare.
+
+4. Ce este modul imediat de randare?
+	Modul imediat în OpenGL era o metodă depășită în care obiectele grafice erau desenate direct, unul câte unul. A fost eliminat începând cu OpenGL 3.0 în favoarea unor tehnici mai moderne.
+
+5. Care este ultima versiune de OpenGL care acceptă modul
+imediat?
+	Ultima versiune de OpenGL care a acceptat modul imediat a fost OpenGL 3.0. De la versiunea 3.1 în sus, s-au adoptat tehnici moderne de randare, eliminând modul imediat.
+
+6. Când este rulată metoda OnRenderFrame()?
+	Similar cu OnUpdateFrame(), momentul exact al rulării metodei OnRenderFrame() în aplicația OpenGL depinde de implementare. Aceasta este folosită pentru desenarea obiectelor grafice și este apelată în bucla principală de randare, după actualizarea stării jocului sau a aplicației.
+
+7. De ce este nevoie ca metoda OnResize() să fie executată
+cel puțin o dată?
+	Metoda OnResize() trebuie executată cel puțin o dată pentru a gestiona redimensionarea ferestrei aplicației. Inițializează corect viewport-ul și matricea de perspectivă în funcție de noile dimensiuni ale ferestrei.
+
+8. Ce reprezintă parametrii metodei CreatePerspectiveFieldOfView() și care este domeniul de valori
+pentru aceștia?
+	Metoda CreatePerspectiveFieldOfView() în OpenGL creează o matrice de perspectivă pentru proiecția 3D. Parametrii includ unghiul de vedere, raportul de aspect, distanța la planul apropiat și distanța la planul îndepărtat. Acești parametri determină modul în care scena 3D este proiectată pe ecran, iar domeniul de valori pentru aceștia este specificat în configurarea proiecției.
